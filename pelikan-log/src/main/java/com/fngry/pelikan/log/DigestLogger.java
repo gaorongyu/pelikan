@@ -1,6 +1,6 @@
 package com.fngry.pelikan.log;
 
-import com.fngry.monk.common.log.tempalte.TemplateRenderManager;
+import com.fngry.pelikan.log.tempalte.TemplateRenderManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
