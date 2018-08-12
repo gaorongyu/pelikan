@@ -10,9 +10,9 @@ package com.fngry.pelikan.id;
  *
  * add class
  * @Compenent
- * public class DefaultSeqGenerator implements MKIDSeqGenerator {
+ * public class SeqGeneratorAdaptor implements MKIDSeqGenerator {
  *
- *      // can use DefaultSeqGenerator or other realization
+ *      // can use com.fngry.pelikan.sequence.impl.DefaultSeqGenerator or other realization
  *      @Autowired
  *      SeqGenerator seqGenerator;
  *
