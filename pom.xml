@@ -6,7 +6,8 @@
 
     <groupId>com.fngry.pelikan</groupId>
     <artifactId>pelikan</artifactId>
-    <version>${pelikan.version}</version>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
 
     <modules>
         <module>pelikan-common</module>
@@ -83,16 +84,16 @@
                 <scope>import</scope>
             </dependency>
 
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-core</artifactId>
-                <version>${org.springframework-version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-aop</artifactId>
-                <version>${org.springframework-version}</version>
-            </dependency>
+            <!--<dependency>-->
+                <!--<groupId>org.springframework</groupId>-->
+                <!--<artifactId>spring-core</artifactId>-->
+                <!--<version>${org.springframework-version}</version>-->
+            <!--</dependency>-->
+            <!--<dependency>-->
+                <!--<groupId>org.springframework</groupId>-->
+                <!--<artifactId>spring-aop</artifactId>-->
+                <!--<version>${org.springframework-version}</version>-->
+            <!--</dependency>-->
 
             <dependency>
                 <groupId>org.codehaus.groovy</groupId>

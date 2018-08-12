@@ -1,6 +1,7 @@
 package com.fngry.pelikan.sequence;
 
-import com.taobao.tddl.client.sequence.exception.SequenceException;
+
+import com.fngry.pelikan.sequence.exception.SequenceException;
 
 /**
  * 序列接口
