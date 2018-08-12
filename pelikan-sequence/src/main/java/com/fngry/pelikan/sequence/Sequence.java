@@ -5,8 +5,7 @@ import com.fngry.pelikan.sequence.exception.SequenceException;
 
 /**
  * 序列接口
- * 
- * @author nianbing
+ * from taobao tddl-sequence
  */
 public interface Sequence {
 
