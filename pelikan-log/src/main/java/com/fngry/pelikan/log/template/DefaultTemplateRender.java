@@ -1,4 +1,4 @@
-package com.fngry.pelikan.log.tempalte;
+package com.fngry.pelikan.log.template;
 
 import java.util.Map;
 

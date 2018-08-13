@@ -1,4 +1,4 @@
-package com.fngry.pelikan.log.tempalte;
+package com.fngry.pelikan.log.template;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
