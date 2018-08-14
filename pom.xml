@@ -14,6 +14,8 @@
         <module>pelikan-conf</module>
         <module>pelikan-log</module>
         <module>pelikan-sequence</module>
+        <module>pelikan-plugin</module>
+        <module>pelikan-jmx</module>
     </modules>
 
     <properties>
@@ -53,27 +55,32 @@
             <dependency>
                 <groupId>com.fngry.pelikan</groupId>
                 <artifactId>pelikan-conf</artifactId>
-                <version>${project.version}</version>
+                <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.fngry.pelikan</groupId>
                 <artifactId>pelikan-function</artifactId>
-                <version>${project.version}</version>
+                <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.fngry.pelikan</groupId>
                 <artifactId>pelikan-log-starter</artifactId>
-                <version>${project.version}</version>
+                <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.fngry.pelikan</groupId>
-                <artifactId>pelikan-sequence-client</artifactId>
-                <version>${project.version}</version>
+                <artifactId>pelikan-sequence</artifactId>
+                <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.fngry.pelikan</groupId>
-                <artifactId>pelikan-sequence-starter</artifactId>
-                <version>${project.version}</version>
+                <artifactId>pelikan-plugin</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fngry.pelikan</groupId>
+                <artifactId>pelikan-jmx</artifactId>
+                <version>1.0-SNAPSHOT</version>
             </dependency>
 
             <dependency>
@@ -109,6 +116,11 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>3.5</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sun.jdmk</groupId>
+                <artifactId>jmxtools</artifactId>
+                <version>1.2.1</version>
             </dependency>
 
         </dependencies>
