@@ -27,8 +27,8 @@ import java.util.List;
  * MBean信息组装器
  * Created by gaorongyu on 2017/11/6.
  */
-@Component("monkMBeanInfoAssembler")
-public class MonkMBeanInfoAssembler extends AbstractReflectiveMBeanInfoAssembler implements IPluginManager {
+@Component("oakMBeanInfoAssembler")
+public class OakMBeanInfoAssembler extends AbstractReflectiveMBeanInfoAssembler implements IPluginManager {
 
     private static final String ENHANCER_BY_CGLIB = "EnhancerByCGLIB";
 

@@ -20,11 +20,14 @@ public class PluginManagerHolder implements ApplicationContextAware, Initializin
 
     @PostConstruct
     public void init() {
+        // step 2
+        // load all beans that implements IPluginManager
         this.pluginManagers = applicationContext.getBeansOfType(IPluginManager.class).values();
     }
 
     @Override
     public void afterPropertiesSet() throws Exception {
+        // step 3
         String[] beanNames = this.applicationContext.getBeanDefinitionNames();
 
         // for loop init plugins
@@ -44,6 +47,7 @@ public class PluginManagerHolder implements ApplicationContextAware, Initializin
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        // step 1
         this.applicationContext = applicationContext;
     }
 
