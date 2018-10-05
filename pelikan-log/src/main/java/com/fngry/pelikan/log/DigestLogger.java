@@ -8,8 +8,6 @@ import java.util.Map;
 
 public class  DigestLogger {
 
-    private static final String SEPARATOR = ",";
-
     private final Logger logger;
 
     private final String[] template;
@@ -38,8 +36,10 @@ public class  DigestLogger {
 
     private static String createTemplate(String[] value) {
         StringBuffer templateDisplay = new StringBuffer();
+        String separator = TemplateRenderManager.getRender().getSeparator();
+
         for (String exp : value) {
-            templateDisplay.append(exp).append(SEPARATOR);
+            templateDisplay.append(exp).append(separator);
         }
         return templateDisplay.toString();
     }
@@ -51,9 +51,11 @@ public class  DigestLogger {
     private String renderTemplate(Map<String, Object> context, boolean succeeded, long startTime, long endTime) {
         StringBuffer logContent = new StringBuffer();
 
-        logContent.append(succeeded ? "Y" : "N").append(SEPARATOR);
-        logContent.append(startTime).append(SEPARATOR);
-        logContent.append(endTime).append(SEPARATOR);
+        String separator = TemplateRenderManager.getRender().getSeparator();
+
+        logContent.append(succeeded ? "Y" : "N").append(separator);
+        logContent.append(startTime).append(separator);
+        logContent.append(endTime).append(separator);
 
         String expressionValue = TemplateRenderManager.getRender().render(createTemplate(template), context);
         logContent.append(expressionValue);

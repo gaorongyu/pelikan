@@ -27,4 +27,11 @@ public interface TemplateRender {
      */
     String render(String valueExp, Map<String, Object> context);
 
+    /**
+     * log content separator
+     *      eg , | ;
+     * @return
+     */
+    String getSeparator();
+
 }

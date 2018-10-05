@@ -9,4 +9,9 @@ public class DefaultTemplateRender implements TemplateRender {
         return TemplateUtil.render(valueExp, context);
     }
 
+    @Override
+    public String getSeparator() {
+        return ",";
+    }
+
 }
